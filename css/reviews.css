@@ -7,20 +7,17 @@
 .reviews-list {
 }
 .reviews-item {
-    background-color: #fff;
+  background-color: #fff;
 }
 .reviews-avatar {
 }
 .reviews-autor {
-
-font-weight: 600;
-font-size: 18px;
-line-height: 1.33333;
-text-align: center;
-
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33333;
+  text-align: center;
 }
 .reviews-text {
-
-text-align: center;
-color: rgba(17, 17, 17, 0.7);
+  text-align: center;
+  color: rgba(17, 17, 17, 0.7);
 }

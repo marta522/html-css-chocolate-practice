@@ -1,45 +1,46 @@
 /* Global styles */
 body {
-    font-family: "Montserrat", sans-serif;
-    font-size: 14px;
-    line-height: 1.29;
-    letter-spacing: -0.02em;
-    color: #111111;
-    background: #fafafa;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #111111;
+  background: #fafafa;
 }
-ol, ul {
-    list-style-type: none;
+ol,
+ul {
+  list-style-type: none;
 }
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 address {
-    font-style: normal;
+  font-style: normal;
 }
 /* Base styles */
 .section {
 }
 .section-title {
-font-weight: 600;
-font-size: 24px;
-line-height: 1.17;
-letter-spacing: -0.03em;
-text-align: center;
-text-transform: uppercase;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-align: center;
+  text-transform: uppercase;
 }
-.accent{
-    color: #fd9222;
+.accent {
+  color: #fd9222;
 }
 .logo {
-font-weight: 700;
-font-size: 18px;
-line-height: 1.11;
-letter-spacing: -0.03em;
-text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
 }
 .logo__icon {
 }
@@ -54,36 +55,34 @@ text-transform: uppercase;
 }
 /* Button*/
 .btn {
-    background-color: transparent;
-    font-weight: 600;
-    border: none;
-
+  background-color: transparent;
+  font-weight: 600;
+  border: none;
 }
 .btn-filled {
-    color: #fff;
-    background: #fd9222;
+  color: #fff;
+  background: #fd9222;
 }
 .btn-filled:hover,
 .btn-filled:focus {
-    background: rgba(253, 146, 34, 0.1);
-    color: #fd9222;
+  background: rgba(253, 146, 34, 0.1);
+  color: #fd9222;
 }
 .btn-outlined {
-    border: none;
+  border: none;
 }
 .primary {
-    color: #fff;
+  color: #fff;
 }
 .primary:hover,
 .primary:focus {
-    color: #fd9222;
-
+  color: #fd9222;
 }
 .secondary {
-    color: #111;
+  color: #111;
 }
 .secondary:hover,
 .secondary:focus {
-    color: #fff;
-    background: #fd9222;
+  color: #fff;
+  background: #fd9222;
 }

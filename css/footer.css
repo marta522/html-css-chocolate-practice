@@ -1,17 +1,16 @@
 .footer {
-    background-color: #1e1823;
+  background-color: #1e1823;
 }
 .footer-slogan {
-
-font-weight: 500;
-font-size: 28px;
-line-height: 1.21;
-letter-spacing: -0.03em;
-color: #fff;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: -0.03em;
+  color: #fff;
 }
 .footer-caption {
-font-weight: 600;
-color: #fff;
+  font-weight: 600;
+  color: #fff;
 }
 
 .contacts {
@@ -21,11 +20,11 @@ color: #fff;
 .contacts-item {
 }
 .contacts-link {
-    color: #fff;
+  color: #fff;
 }
 .contacts-link:hover,
 .contacts-link:focus {
-    color: #fd9222;
+  color: #fd9222;
 }
 
 .footer-menu {
@@ -33,10 +32,10 @@ color: #fff;
 .footer-menu-item {
 }
 .footer-menu-link {
-font-weight: 500;
-color: #fff;
+  font-weight: 500;
+  color: #fff;
 }
 .footer-menu-link:hover,
 .footer-menu-link:focus {
-    color: #fd9222;
+  color: #fd9222;
 }
