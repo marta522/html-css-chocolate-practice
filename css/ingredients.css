@@ -11,9 +11,29 @@
   gap: 32px;
 }
 .ingredients-item {
+  position: relative;
   width: calc((100% - 32px * 3) / 4);
   border-radius: 15px;
   padding: 28px 24px;
+}
+.ingrediets-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: 14px;
+  right: 14px;
+
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+.ingredients-item:nth-child(2n) .ingrediets-icon {
+  color: #fd9222;
+}
+.ingredients-item:nth-child(2n + 1) .ingrediets-icon {
+  color: #fafafa;
 }
 /* a * n + b */
 .ingredients-item:nth-child(2n) {
