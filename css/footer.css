@@ -47,6 +47,8 @@
 
 .footer-bottom {
   padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
 }
 .footer-menu {
   display: flex;
@@ -68,4 +70,34 @@
 .footer-menu-link:hover,
 .footer-menu-link:focus {
   color: #fd9222;
+}
+
+/* Footer form*/
+
+.footer-form {
+  display: flex;
+  gap: 8px;
+}
+.footer-form-input {
+  border: 1.5px solid rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+
+  background-color: transparent;
+  outline: transparent;
+
+  color: #fff;
+
+  padding: 13px 24px;
+  width: 314px;
+  height: 46px;
+
+  transition: 300ms ease-out;
+  transition-property: border-color;
+}
+.footer-form-input:focus {
+  border-color: #fd9222;
+}
+
+.footer-form-input::placeholder {
+  color: #fff;
 }

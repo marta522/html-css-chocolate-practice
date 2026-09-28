@@ -1,0 +1,229 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgb(17, 17, 17, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition: 300ms ease-out 300ms;
+  transition-property: opacity, pointer-events;
+}
+.backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+
+  transition-delay: 0ms;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-70%);
+  opacity: 0;
+
+  max-width: 518px;
+  width: 100%;
+  min-height: 800px;
+  padding: 40px;
+  border-radius: 15px;
+  background: #fafafa;
+
+  transition: 300ms ease-out 0ms;
+  transition-property: transform, opacity;
+}
+
+.backdrop.is-open .modal {
+  transform: translateX(-50%) translateY(-50%);
+  opacity: 1;
+
+  transition-delay: 300ms;
+}
+
+.modal-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+.modal-btn-icon {
+  color: #111111;
+  transition: 300ms ease-out;
+  transition-property: color;
+}
+.modal-btn:hover > .modal-btn-icon,
+.modal-btn:focus > .modal-btn-icon {
+  color: #fd9222;
+}
+.modal-caption {
+  width: 300px;
+  margin-bottom: 40px;
+
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+/* Modal form */
+.modal-form {
+}
+.modal-form-field {
+  margin-bottom: 18px;
+}
+.modal-form-label {
+  display: block;
+  margin-bottom: 8px;
+
+  color: rgba(17, 17, 17, 0.7);
+}
+.modal-form-wrapper {
+  position: relative;
+}
+.modal-form-input {
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 12px;
+
+  font-size: 18px;
+  line-height: 1.33;
+  outline: transparent;
+
+  padding: 22px 62px;
+  width: 100%;
+  max-width: 438px;
+
+  transition: 300ms ease-out;
+  transition-property: border-color;
+}
+.modal-form-input:focus {
+  border-color: #fd9222;
+}
+
+.modal-form-icon {
+  position: absolute;
+  top: 50%;
+  left: 24px;
+
+  transform: translateY(-50%);
+  color: #111111;
+  pointer-events: none;
+
+  transition: 300ms ease-out;
+  transition-property: color;
+}
+.modal-form-input:focus + .modal-form-icon {
+  color: #fd9222;
+}
+
+.model-form-comment {
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 12px;
+
+  outline: transparent;
+  padding: 22px 24px;
+  width: 100%;
+  height: 138px;
+  resize: none;
+
+  font-size: 18px;
+  line-height: 1.33;
+
+  transition: 300ms ease-out;
+  transition-property: border-color;
+}
+.model-form-comment:focus {
+  border-color: #fd9222;
+}
+.model-form-comment::placeholder {
+  color: rgba(17, 17, 17, 0.4);
+}
+.modal-form-agreement {
+  margin-bottom: 40px;
+}
+
+.modal-form-policy {
+  color: rgba(17, 17, 17, 0.7);
+}
+.modal-form-checkbox {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+
+  border-radius: 6px;
+  border: 1px solid rgba(17, 17, 17, 0.14);
+  cursor: pointer;
+
+  transition: 300ms ease-out;
+  transition-property: background-color, border-color;
+}
+.checkbox:checked + .modal-form-policy > .modal-form-checkbox {
+  border-color: transparent;
+  background-color: #fd9222;
+}
+.checkbox:focus-visible + .modal-form-policy > .modal-form-checkbox {
+  outline: auto;
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+.modal-form-checkbox-icon {
+  color: #fff;
+  opacity: 0;
+
+  transition: 300ms ease-out;
+  transition-property: opacity;
+}
+.checkbox:checked
+  + .modal-form-policy
+  > .modal-form-checkbox
+  .modal-form-checkbox-icon {
+  opacity: 1;
+}
+
+.modal-from-link {
+  color: #fd9222;
+}
+
+/* Form Validatiom */
+.modal-form-input:user-invalid,
+.model-form-comment:user-invalid {
+  border-color: #e74a3b;
+}
+
+.modal-form-input:user-invalid + .modal-form-icon {
+  color: #e74a3b;
+}
+.error-icon {
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  transform: translateY(-50%);
+
+  opacity: 0;
+  pointer-events: none;
+
+  transition: 300ms ease-out;
+  transition-property: opacity;
+}
+
+.modal-form-input:user-invalid ~ .error-icon {
+  opacity: 1;
+}
